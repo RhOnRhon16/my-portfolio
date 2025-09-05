@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
+Route::view('/', 'portfolio'); // full portfolio page
+Route::view('/about', 'about');
+Route::view('/skills', 'skills');
+Route::view('/projects', 'projects');
+Route::view('/contact', 'contact');
