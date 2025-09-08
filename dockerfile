@@ -28,6 +28,9 @@ COPY --from=frontend /app/public/build ./public/build
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
+# Run storage link command
+RUN php artisan storage:link || true
+
 # Laravel setup
 RUN php artisan config:clear && \
     php artisan route:clear && \
