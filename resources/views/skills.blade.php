@@ -3,42 +3,83 @@
     <!-- Skills Grid -->
     <h2 class="text-4xl font-bold text-cyan-400" data-aos="flip-up">My Skills</h2>
 
-    <!-- Skills Grid -->
     <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl w-full">
 
-        <!-- Example Skill -->
+        <!-- HTML -->
         <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
-                    hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
             data-aos="zoom-in" data-aos-delay="100">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                 alt="HTML" class="w-16 h-16">
             <span class="text-lg font-semibold">HTML</span>
         </div>
 
+        <!-- CSS -->
         <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
-                    hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
             data-aos="zoom-in" data-aos-delay="200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                 alt="CSS" class="w-16 h-16">
             <span class="text-lg font-semibold">CSS</span>
         </div>
 
+        <!-- JavaScript -->
         <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
-                    hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
             data-aos="zoom-in" data-aos-delay="300">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 alt="JavaScript" class="w-16 h-16">
             <span class="text-lg font-semibold">JavaScript</span>
         </div>
 
+        <!-- Laravel -->
         <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
-                    hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
             data-aos="zoom-in" data-aos-delay="400">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
                 alt="Laravel" class="w-16 h-16">
             <span class="text-lg font-semibold">Laravel</span>
         </div>
+
+        <!-- Tailwind CSS -->
+        <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+            data-aos="zoom-in" data-aos-delay="500">
+            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                alt="Tailwind" class="w-16 h-16">
+            <span class="text-lg font-semibold">Tailwind</span>
+        </div>
+
+        <!-- Alpine.js -->
+        <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+            data-aos="zoom-in" data-aos-delay="600">
+            <img src="https://avatars.githubusercontent.com/u/59030169?s=200&v=4"
+                alt="Alpine.js" class="w-16 h-16 rounded-lg bg-white p-2">
+            <span class="text-lg font-semibold">Alpine.js</span>
+        </div>
+
+        <!-- Livewire -->
+        <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+            data-aos="zoom-in" data-aos-delay="700">
+            <img src="https://livewire.laravel.com/img/twitter.png"
+                alt="Livewire" class="w-16 h-16 rounded-lg">
+            <span class="text-lg font-semibold">Livewire</span>
+        </div>
+
+        <!-- React.js -->
+        <div class="flex flex-col items-center space-y-2 p-6 bg-gray-900/50 rounded-2xl shadow-lg
+                hover:scale-110 hover:shadow-cyan-400/30 transition-all duration-300"
+            data-aos="zoom-in" data-aos-delay="800">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React.js" class="w-16 h-16">
+            <span class="text-lg font-semibold">React.js</span>
+        </div>
+
     </div>
+
+
 
     <!-- Widgets -->
     <div class="mt-16 grid md:grid-cols-2 gap-10 w-full max-w-5xl">
