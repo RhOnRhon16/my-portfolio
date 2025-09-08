@@ -13,7 +13,7 @@
 
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <!-- Profile Image -->
-        <img src="{{ asset('storage/images/111.jpg') }}"
+        <img src="{{ asset('storage/images/111.JPG') }}"
             class="w-80 h-96 rounded-lg shadow-2xl ring-8 ring-cyan-400/30 transform hover:scale-110 hover:rotate-3 transition duration-700 ease-in-out"
             data-aos="fade-right">
 
