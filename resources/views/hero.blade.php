@@ -1,6 +1,21 @@
-<section id="home" class="h-screen flex items-center justify-center text-center px-6 relative overflow-hidden ">
+<section id="home" class="h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
+    <!-- Background image -->
+    <div class="absolute inset-0 -z-20">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-70">
+            <source src="{{ asset('storage/images/bg-gif.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Makapal na fade sa baba -->
+        <div id="video-fade"
+            class="absolute bottom-0 left-0 w-full h-80 
+            bg-gradient-to-t from-black via-black/90 to-transparent 
+            transition-colors duration-700">
+        </div>
+    </div>
+
     <!-- Background blobs -->
-    <div class="absolute top-0 left-0 w-full h-full">
+    <div class="absolute top-0 left-0 w-full h-full -z-10">
         <div class="absolute w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
         <div class="absolute top-1/4 left-1/2 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
         <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
@@ -14,7 +29,7 @@
             <span class="ml-3 animate-bounce">✨</span>
         </h1>
 
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl" data-aos="fade-up" data-aos-delay="300">
+        <p class="mt-6 text-lg bg-black rounded-md p-2 bg-opacity-70 w-full text-gray-300 max-w-2xl" data-aos="fade-up" data-aos-delay="300">
             I design and build <span class="text-cyan-400 font-semibold animate-pulse">modern</span>,
             <span class="text-purple-400 font-semibold animate-pulse animation-delay-500">fast</span>,
             and <span class="text-blue-400 font-semibold animate-pulse animation-delay-1000">interactive</span> web experiences.
@@ -27,6 +42,7 @@
         </a>
     </div>
 </section>
+
 
 
 <!-- Add this in your CSS or Tailwind config -->
