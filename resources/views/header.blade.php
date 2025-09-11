@@ -1,31 +1,48 @@
 <!-- Header at Color Palette Buttons -->
-<header class="fixed top-0 left-0 w-full z-50 bg-gray-900/70 backdrop-blur-md border-b border-gray-700/50">
+<header class="fixed top-0 left-0 w-full z-50 bg-gray-900/60 backdrop-blur-lg border-b border-gray-700/50 shadow-lg shadow-black/20">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="#home" class="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300">
+        <a href="#home"
+            class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent hover:scale-110 hover:brightness-125 transition-all duration-300">
             AJM<span class="text-gray-200">Portfolio</span>
         </a>
 
-        <!-- Color Palette Buttons -->
-        <div class="fixed top-24 right-6 flex flex-col space-y-3 z-50">
-            <button onclick="gradualTheme('#111827')" class="w-10 h-10 rounded-full bg-gray-950 border border-gray-700 shadow-md hover:scale-110 transition"></button>
-            <button onclick="gradualTheme('#1f2937')" class="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 shadow-md hover:scale-110 transition"></button>
-            <button onclick="gradualTheme('#064e3b')" class="w-10 h-10 rounded-full bg-green-900 border border-gray-700 shadow-md hover:scale-110 transition"></button>
-            <button onclick="gradualTheme('#5C4033')" class="w-10 h-10 rounded-full bg-[#5C4033] border border-gray-700 shadow-md hover:scale-110 transition"></button>
-            <button onclick="gradualTheme('#1e3a8a')" class="w-10 h-10 rounded-full bg-blue-950 border border-gray-700 shadow-md hover:scale-110 transition"></button>
-        </div>
-
         <!-- Navigation -->
-        <nav class="hidden md:flex space-x-8 text-lg font-medium text-gray-300">
-            <a href="#about" class="hover:text-cyan-400 transition">About</a>
-            <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-            <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
-            <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        <nav class="hidden md:flex space-x-8 text-lg font-medium">
+            <a href="#about"
+                class="relative group text-gray-300 hover:text-cyan-400 transition">
+                About
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#projects"
+                class="relative group text-gray-300 hover:text-cyan-400 transition">
+                Projects
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#skills"
+                class="relative group text-gray-300 hover:text-cyan-400 transition">
+                Skills
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#contact"
+                class="relative group text-gray-300 hover:text-cyan-400 transition">
+                Contact
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+            </a>
         </nav>
-    </div>
 
+        <!-- Color Palette Buttons -->
+        <div class="fixed top-28 right-6 flex flex-col space-y-3 z-50">
+            <button onclick="gradualTheme('#111827')" class="w-10 h-10 rounded-full bg-gray-950 border border-gray-700 shadow-md hover:scale-110 hover:ring-2 hover:ring-cyan-400/50 transition"></button>
+            <button onclick="gradualTheme('#1f2937')" class="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 shadow-md hover:scale-110 hover:ring-2 hover:ring-cyan-400/50 transition"></button>
+            <button onclick="gradualTheme('#064e3b')" class="w-10 h-10 rounded-full bg-green-900 border border-gray-700 shadow-md hover:scale-110 hover:ring-2 hover:ring-cyan-400/50 transition"></button>
+            <button onclick="gradualTheme('#5C4033')" class="w-10 h-10 rounded-full bg-[#5C4033] border border-gray-700 shadow-md hover:scale-110 hover:ring-2 hover:ring-cyan-400/50 transition"></button>
+            <button onclick="gradualTheme('#1e3a8a')" class="w-10 h-10 rounded-full bg-blue-950 border border-gray-700 shadow-md hover:scale-110 hover:ring-2 hover:ring-cyan-400/50 transition"></button>
+        </div>
+    </div>
 </header>
+
 <!-- Astig Floating Chat UI -->
 <div id="chat-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
     <!-- Floating Button -->
@@ -106,13 +123,13 @@
 
     // AI Responses
     const aboutResponses = [
-        "Hi! I'm AJM, a passionate web developer focused on modern interactive websites.",
-        "Hey! AJM here, I love creating dynamic web apps and beautiful portfolio sites.",
-        "Hello! I'm AJM, and I build responsive websites with engaging user interfaces.",
+        "Hi! I'm Arron, a passionate web developer focused on modern interactive websites.",
+        "Hey! Arron here, I love creating dynamic web apps and beautiful portfolio sites.",
+        "Hello! I'm Arron, and I build responsive websites with engaging user interfaces.",
         "Hi there! I specialize in modern web development using Tailwind CSS, Laravel, and JS.",
-        "Hey! I'm AJM, dedicated to crafting interactive web experiences.",
+        "Hey! I'm Arron, dedicated to crafting interactive web experiences.",
         "Hello! My goal is to create websites that are not just functional but visually appealing.",
-        "Hi! I’m AJM, a developer who combines design and functionality in every project.",
+        "Hi! I’m Arron, a developer who combines design and functionality in every project.",
         "Hey! I love building projects that showcase creativity and clean code."
     ];
 
@@ -139,9 +156,9 @@
     ];
 
     const contactResponses = [
-        "You can contact me via the Contact section, or email me at ajm@example.com.",
-        "Reach me through the Contact page or drop an email at ajm@example.com.",
-        "Feel free to connect via the Contact section or send an email to ajm@example.com.",
+        "You can contact me via the Contact section, or email me at manlapazarronjohn@gmail.com.",
+        "Reach me through the Contact page or drop an email at manlapazarronjohn@gmail.com.",
+        "Feel free to connect via the Contact section or send an email to manlapazarronjohn@gmail.com.",
         "I'd love to hear from you! Use the Contact page or email me directly.",
         "Need to get in touch? Check the Contact section for ways to reach me.",
         "You can message me using the Contact form, or email me anytime.",
