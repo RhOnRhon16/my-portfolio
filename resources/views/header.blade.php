@@ -311,7 +311,6 @@
             const sec = sections[key];
             if (!sec) continue;
 
-            // Dark variant lang sa about at projects
             if ((key === 'about' || key === 'projects') && darkMap[color]) {
                 sec.style.backgroundColor = darkMap[color];
             } else {
@@ -322,14 +321,23 @@
         // Header background
         if (header) header.style.backgroundColor = color + 'b3';
 
-        // Nav links text color (adjust contrast)
+        // Nav links
         navLinks.forEach(link => {
             link.style.color = (color === '#111827' || color === '#1f2937') ? '#cbd5e1' : '#ffffff';
         });
 
-        // Save sa localStorage
+        // 🎨 Fade color = darkMap version ng theme
+        const fade = document.getElementById('video-fade');
+        if (fade) {
+            const dark = darkMap[color] ?? "#000000"; // fallback black
+            fade.style.background = `linear-gradient(to top, ${dark}, transparent)`;
+        }
+
+        // Save theme
         localStorage.setItem('themeColor', color);
     }
+
+
 
     // Apply saved theme on load
     window.addEventListener('DOMContentLoaded', () => {
